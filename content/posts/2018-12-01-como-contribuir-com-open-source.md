@@ -58,9 +58,19 @@ E pra mim, em todas elas, fiz open source.
 
 ![esse dia foi loko](0_rXUrjovcX0o9roLU.jpeg)*esse dia foi loko*
 
-### E por que contribuir
+## Como funciona um projeto open source?
 
-https://twitter.com/felipefialho/status/1055430035534942209
+Um open source é resumidamente um projeto criado e mantido pelas pessoas que o utilizam. Digamos que você tenha um campo de futebol open source perto de sua casa, uma pessoa vai ajudar a cortar a grama, outra ajuda a pintar as marcações, outro ajuda a regar, mais alguém trás a bola e todos podem jogar! É um sistema colaborativo de crescimento.
+
+Contribuir para o open source pode ser uma maneira gratificante de aprender, ensinar e construir experiência em praticamente qualquer habilidade que você possa imaginar.
+
+Além de tudo isso você pode interagir com profissionais reais do mercado e consultá-los para tirar suas dúvidas, fazer análise de código e darem dicas para você melhorar.
+
+Recomendo dar uma lida no site [Open Source Guides](https://opensource.guide/pt) para ter um conhecimento mais aprofundado da iniciativa open source.
+
+_Contribuição [@iaurg](https://github.com/iaurg)_
+
+### E por que contribuir
 
 Contribuição é o que faz o mundo de desenvolvimento ter evoluído tanto nos últimos anos.
 
@@ -152,6 +162,8 @@ Basta dar uma rápida passada no Github e vai encontrar diversos projetos em que
 Não é exagero dizer que o Github está para projetos open source como o Google está para a internet.
 
 ### E o Github é uma rede social
+
+https://twitter.com/felipefialho_/status/1073168175515295749
 
 Isso significa que você pode seguir as pessoas e ver suas rotinas como developer:
 
