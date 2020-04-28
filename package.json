@@ -4,8 +4,9 @@
   "description": "My personal website and blog",
   "version": "3.0.0",
   "author": "Felipe Fialho <hi@felipefialho.com>",
+  "homepage": "https://github.com/felipefialho/felipefialho.com#readme",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/felipefialho/felipefialho.com/issues"
   },
   "scripts": {
     "build": "gatsby build",
@@ -17,11 +18,10 @@
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint ./src/",
-    "lint:fix:js": "eslint ./src/ --fix"
+    "lint:fix": "eslint ./src/ --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -56,7 +56,7 @@
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-remark-prismjs": "^3.4.1",
-    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-remark-relative-images": "0.2.3",
     "gatsby-remark-responsive-iframe": "^2.3.1",
     "gatsby-remark-smartypants": "^2.1.21",
     "gatsby-source-filesystem": "^2.2.2",
@@ -84,25 +84,22 @@
     "@commitlint/config-conventional": "^8.3.4",
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.7",
-    "eslint": "^6.2.2",
+    "commitlint": "^8.3.5",
     "eslint-config-react-app": "^5.2.1",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react-hooks": "^3.0.0",
-    "husky": "^4.2.3",
-    "stylelint": "^10.1.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint": "^6.2.2",
+    "husky": "^4.2.5",
+    "prettier-eslint-cli": "^5.0.0",
+    "prettier-eslint": "^9.0.1",
+    "prettier": "2.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^4.0.0",
-    "stylelint-processor-styled-components": "^1.10.0"
-  },
-  "homepage": "https://github.com/felipefialho/felipefialho.github.io#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipefialho/felipefialho.github.io.git"
+    "stylelint-processor-styled-components": "^1.10.0",
+    "stylelint": "^10.1.0"
   }
 }
