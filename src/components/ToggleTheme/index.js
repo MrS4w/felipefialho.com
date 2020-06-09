@@ -21,12 +21,16 @@ const trackClickTheme = (theme) => {
   })
 }
 
-const LightButton = () => {
+const ToggleTheme = () => {
   const [theme, setTheme] = useState(null)
-  const darkMode = theme === 'dark'
+
+  const lightTheme = 'theme-light'
+  const darkTheme = 'theme-dark'
+  const darkMode = theme === darkTheme
 
   useEffect(() => {
     setTheme(window.__theme)
+    console.log(window.__theme)
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
 
@@ -36,7 +40,7 @@ const LightButton = () => {
 
   const onChange = () => {
     trackClickTheme(theme)
-    window.__setTheme(darkMode ? 'light' : 'dark')
+    window.__setTheme(darkMode ? lightTheme : darkTheme)
 
     if (window && window.DISQUS !== undefined) {
       window.setTimeout(() => window.DISQUS.reset({ reload: true }), 600)
@@ -44,13 +48,13 @@ const LightButton = () => {
   }
 
   return (
-    <S.LightButton active={!darkMode} onClick={onChange}>
+    <S.ToggleTheme active={!darkMode} onClick={onChange}>
       <Helmet>
-        <body className={`${darkMode ? 'theme-dark' : 'theme-light'}`} />
+        <body className={`${theme}`} />
       </Helmet>
-      <S.LightButtonIcon />
-    </S.LightButton>
+      <S.ToggleThemeTrack />
+    </S.ToggleTheme>
   )
 }
 
-export default LightButton
+export default ToggleTheme
